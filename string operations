@@ -1,0 +1,38 @@
+how to convert Array to comma separated string
+
+string s1 = string.Join(", ", array); 
+
+ string s1 = string.Join("/", array); 
+ 
+ 
+        // Creating a string array 
+        string[] array = {"lazy", "dog", "jumps", "Over", 
+                                  "the", "Lazy", "fox" }; 
+  
+        // Using Join method 
+        // Here separator used is '-'( hiphen ) 
+        // from index 2 and covers upto 5  
+        // elements from index 2 
+        string s1 = string.Join("-", array, 2, 5); 
+        Console.WriteLine("Value of string is " + s1); 
+        o/p: Value of string is jumps-Over-the-Lazy-fox==
+================================================================================  
+   2.how to trim leading and tailing spaces for string
+   
+   string s1 = " GFG "; 
+    Console.WriteLine(s1.Trim()); 
+    
+     //no spaces
+    o/p:  GFG
+    
+    
+      string s1 = "123abc456xyz789"; 
+      Console.WriteLine("Before:" + s1); 
+      Console.WriteLine("After:" + s1.Trim({'1', '2', '3', '4', '5', '6', '7', '8', '9'})); 
+      
+      o/p:
+      
+      Before:123abc456xyz789
+      After:abc456xyz
+      
+      
